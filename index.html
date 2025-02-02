@@ -29,11 +29,196 @@
 
         <!-- Font -->
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body>
-        <h1>Hello</h1>
+    <body style="height: 6000px">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <img src="./assets/img/logo.svg" alt="" />
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link nav__active">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Products</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#1" class="nav__link">Features</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__action">
+                        <a href="#!" class="header__logn-in">Logn in</a>
+                        <a href="#!" class="btn header__sign-up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <section class="hero__content">
+                        <span class="section-label">Digital Smart Wallet</span>
+                        <h1 class="hero__heading">
+                            Digital <span class="hero__heading-color">Payment</span> For Everyone.
+                        </h1>
+                        <p class="section-desc">
+                            We bring together eveything that’s required to build websites and apps that accept payments
+                            and send payouts globally. We are the best platform.
+                        </p>
+                        <form action="" class="hero__form" autocomplete="off">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="input-email"
+                                placeholder="Your email address"
+                            />
+                            <button class="btn btn-email">Get Started</button>
+                        </form>
+                        <p class="hero__note">*We’ll respect the inbox and never share your email.</p>
+                    </section>
+                    <div class="hero__media">
+                        <figure class="hero__img-wrap">
+                            <img src="./assets/img/hero-01.png" alt="" class="hero__img" />
+                            <div class="hero__img-deposite">
+                                <img src="./assets/icon/hero-01.svg" alt="" />
+                                <span class="deposite-title">Deposite</span>
+                                <span class="deposite-price">$32000</span>
+                            </div>
+                            <div class="hero__img-interest">
+                                <span class="interest-percent">0%</span>
+                                <span class="interest-title">Interest</span>
+                            </div>
+                            <div class="hero__img-funds">
+                                <img src="./assets/icon/hero-02.svg" alt="" />
+                                <div>
+                                    <span class="funds-price">$1.310</span>
+                                    <span class="funds-title">SECURED FUNDS</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="work">
+                <div class="container">
+                    <div class="work__inner">
+                        <div class="work__media">
+                            <figure class="work__img-wrap">
+                                <img src="./assets/img/work-01.png" alt="" class="work__img" />
+                                <div class="work__img-logo">
+                                    <img src="./assets/icon/work-01.svg" alt="" class="work__logo" />
+                                </div>
+                                <div class="work__img-congratulations">
+                                    <div class="work__check">
+                                        <img src="./assets/icon/work-check.svg" alt="" class="work__logo" />
+                                    </div>
+                                    <div class="work__congratulations">
+                                        <p class="work__congratulations-title">Congratulations</p>
+                                        <p class="work__congratulations-desc">Your account activated</p>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <section class="work__content">
+                            <span class="section-label">Digital Smart Wallet</span>
+                            <h2 class="section-heading">How It Works</h2>
+                            <div class="work__step">
+                                <section class="work__step-item">
+                                    <h3 class="work__step-heading">1. Open a High Interest Checking account</h3>
+                                    <p class="work__step-desc">
+                                        Fund your bank account with a minimum balance of $100. Enroll in 3 minutes or
+                                        less!
+                                    </p>
+                                </section>
+                                <section class="work__step-item">
+                                    <h3 class="work__step-heading">
+                                        2. 10 point-of-sale transactions each Month that are at least $10 each.
+                                    </h3>
+                                    <p class="work__step-desc">
+                                        Be sure to use your rewards checking account as often as possible in order to
+                                        accue APYI
+                                    </p>
+                                </section>
+                                <section class="work__step-item">
+                                    <h3 class="work__step-heading">3. Receive up to 5.50% APY</h3>
+                                    <p class="work__step-desc">
+                                        The APY you earn will be based on your account balance and satisfying the
+                                        transaction requirement.
+                                    </p>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="payments">
+                <div class="container">
+                    <div class="payments__inner">
+                        <section class="payments__content">
+                            <span class="section-label">Digital Smart Wallet</span>
+                            <h2 class="section-heading">One Card For All Your Payments</h2>
+                            <p class="section-desc">
+                                We bring together eveything that’s required to build websites and apps that accept
+                                payments and send payouts globally. We are the best platform.
+                            </p>
+                            <ul class="payments__list">
+                                <li class="payments__item">Global Payments</li>
+                                <li class="payments__item">One-Click Purchase</li>
+                                <li class="payments__item">Friendly Price</li>
+                            </ul>
+                            <a href="#!" class="btn payments__btn">Get Started</a>
+                        </section>
+                        <div class="payments__media">
+                            <figure class="payments__img-wrap">
+                                <img src="./assets/img/payments-01.png" alt="" class="payments__img" />
+
+                                <div class="payments__send">
+                                    <div class="payments__send-img">
+                                        <img src="./assets/icon/payments-01.svg" alt="" />
+                                    </div>
+                                    <div class="payments__send-content">
+                                        <div class="payments__send-detail">
+                                            <span>Send Money</span> <span>- $600</span>
+                                        </div>
+                                        <div class="payments__send-detail">
+                                            <span>Airbnb Payment</span><span>Sep 23</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payments__income">
+                                    <div class="payments__income-img">
+                                        <img src="./assets/icon/payments-02.svg" alt="" />
+                                    </div>
+                                    <p class="payments__income-title">Income</p>
+                                    <p class="payments__income-price">$1250</p>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
