@@ -29,6 +29,10 @@ select {
     font-family: inherit;
 }
 
+img {
+    display: block;
+}
+
 .btn {
     --height: 58px;
 
@@ -455,11 +459,13 @@ select {
     column-gap: 130px;
 }
 
-.payments__list {
+.payments__list,
+.money__list {
     margin-top: 28px;
 }
 
-.payments__item {
+.payments__item,
+.money__item {
     display: flex;
     align-items: center;
     column-gap: 12px;
@@ -470,7 +476,8 @@ select {
     line-height: 1.66667;
 }
 
-.payments__item::before {
+.payments__item::before,
+.money__item::before {
     content: '';
     display: inline-block;
     width: 12px;
@@ -479,7 +486,8 @@ select {
     background: #7264d6;
 }
 
-.payments__btn {
+.payments__btn,
+.money__btn {
     margin-top: 38px;
 }
 
@@ -575,4 +583,209 @@ select {
     margin-top: 6px;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* Money */
+.money {
+    margin-top: 110px;
+    padding: 30px 0;
+}
+
+.money__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 230px;
+}
+
+.money__img-wrap {
+    position: relative;
+}
+
+.money__img-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+    display: inline-block;
+    background-image: url(../img/money-02.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 72%;
+}
+
+.money__img {
+    margin: 0 auto;
+    max-width: calc(100% - 56px);
+}
+
+.money__payment-method {
+    position: absolute;
+    bottom: 57px;
+    right: -74px;
+    padding: 28px;
+    width: 281px;
+    box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+}
+
+.money__method-title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667;
+}
+
+.money__method {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.money__method-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.money__method-item:last-child {
+    background: #f9ea63;
+}
+
+.money__method-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    right: -26px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264d6;
+}
+
+/* Testimonial */
+.testimonial {
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.testimonial__top {
+    text-align: center;
+}
+
+.testimonial__label {
+    justify-content: center;
+}
+
+.testimonial__desc {
+    margin: 18px auto 0;
+    width: 435px;
+}
+
+.testimonial__content {
+    margin-top: 70px;
+    display: flex;
+    column-gap: 30px;
+    /* overflow: hidden; */
+}
+
+.testimonial__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: calc(50% - 15px);
+}
+
+.testimonial__item-say {
+    position: relative;
+    padding: 42px 28px;
+    border-radius: 10px;
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.54545;
+    filter: drop-shadow(0px 1px #dfe2e8) drop-shadow(0px -1px #dfe2e8) drop-shadow(1px 0px #dfe2e8)
+        drop-shadow(-1px 0px #dfe2e8);
+    background: #fff;
+    transition: filter 0.1s;
+}
+
+.testimonial__item:hover .testimonial__item-say {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.testimonial__item-say::before {
+    content: '';
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    translate: -50%;
+    display: inline-block;
+    border-top: 65px solid;
+    border-left: 50px solid;
+    border-right: 50px solid;
+    border-color: #fff transparent;
+}
+
+.testimonial__item-avatar {
+    margin-top: 100px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}
+
+.testimonial__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial__item-name {
+    margin-top: 20px;
+    color: #070052;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38462;
+}
+
+.testimonial__item-job {
+    margin-top: 2px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.66667;
+}
+
+.testimonial__dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.testimonial__dot {
+    display: inline-block;
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9b9fab;
+}
+
+.testimonial__dot-active,
+.testimonial__dot:hover {
+    border-color: #7264d6;
+    background: #7264d6;
+    cursor: pointer;
 }
