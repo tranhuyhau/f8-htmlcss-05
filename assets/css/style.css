@@ -341,7 +341,7 @@ img {
     content: url(../img/work-02.png);
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     z-index: -1;
 }
 
