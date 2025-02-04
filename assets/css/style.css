@@ -89,9 +89,17 @@ img {
     line-height: 1.66667;
 }
 
+.fixed {
+    position: sticky;
+    left: 0;
+    top: -34px;
+    z-index: 99;
+}
+
 /* Header */
 .header {
-    padding-top: 42px;
+    padding: 42px 0 8px;
+    background: #fff;
 }
 
 .header__row {
@@ -132,7 +140,7 @@ img {
     right: 24px;
     bottom: 6px;
     border-radius: 2px;
-    height: 1px;
+    height: 1.5px;
     background: #7467c1;
 }
 
@@ -158,7 +166,7 @@ img {
 
 /* Hero */
 .hero {
-    padding: 76px 0;
+    padding: 68px 0;
 }
 
 .hero__inner {
@@ -724,7 +732,7 @@ img {
     filter: drop-shadow(0px 1px #dfe2e8) drop-shadow(0px -1px #dfe2e8) drop-shadow(1px 0px #dfe2e8)
         drop-shadow(-1px 0px #dfe2e8);
     background: #fff;
-    transition: filter 0.1s;
+    transition: filter 0.3s;
 }
 
 .testimonial__item:hover .testimonial__item-say {
@@ -1056,7 +1064,8 @@ img {
     margin-top: 8px;
 }
 
-.footer__link {
+.footer__link,
+.footer__address {
     color: #6a6e78;
     font-size: 1.8rem;
     line-height: 1.66667;
